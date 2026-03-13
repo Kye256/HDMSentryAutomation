@@ -1,0 +1,1 @@
+=MID(B2,6,SEARCH(" ",B2,1)-SEARCH("n",B2,1))

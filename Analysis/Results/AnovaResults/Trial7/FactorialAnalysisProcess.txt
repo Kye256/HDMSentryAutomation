@@ -1,0 +1,2 @@
+1. Get the differences between the 
+http://www.marsja.se/four-ways-to-conduct-one-way-anovas-using-python/
