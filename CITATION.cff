@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "HDM-Sentry Automation"
+abstract: "Python scripts for automated sensitivity analysis of the HDM-4 highway management model via HDM-Sentry GUI automation."
+authors:
+  - family-names: "Kazibwe"
+    given-names: "Philip Kyeyune"
+    orcid: "https://orcid.org/0009-0003-4139-2442"
+repository-code: "https://github.com/Omubi/HDMSentryAutomation"
+license: MIT
+date-released: "2016-08-01"
+keywords:
+  - hdm-4
+  - highway management
+  - sensitivity analysis
+  - gui automation
+  - pywinauto
+  - anova
+  - sobol
+references:
+  - type: thesis
+    authors:
+      - family-names: "Kazibwe"
+        given-names: "Philip Kyeyune"
+    title: "Assessing High Level Data Representation for HDM-4"
+    year: 2016
+    institution:
+      name: "University of Birmingham"
+    thesis-type: "MSc Dissertation"
