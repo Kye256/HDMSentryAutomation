@@ -77,7 +77,7 @@ def analysis_run(name, traffic_growth, condition, traffic_volume, geometry):
     move_cursor(3)
     click_element(1)
 
-for line in fileinput.input('C:\Users\Kyeyune.PKAZIBWE-LAP\Documents\Msc. RoadMgtAndEng\Academics\IndividualProject\Script\\input2.txt'):
+for line in fileinput.input('../data/input2.txt'):
     srt = line
     params = line.split(',')
     analysis_run(params[0],int(params[1]),int(params[2]),int(params[3]),int(params[4]))

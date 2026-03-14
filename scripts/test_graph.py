@@ -1,7 +1,7 @@
 '''from csv import reader
 from matplotlib import pyplot
 
-with open('C:\Users\Kyeyune.PKAZIBWE-LAP\Documents\Msc. RoadMgtAndEng\Academics\IndividualProject\Analysis\Results\Trial7\pyresults7minmaint.csv','r') as f:
+with open('../results/factorial/trial7/pyresults7minmaint.csv','r') as f:
     data = list(reader(f))
 
 pyplot.plot('run','ave_iri')

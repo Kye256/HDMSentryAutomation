@@ -1,3 +1,11 @@
+# ============================================================================
+# NOTE: This file is a copy of SALib's delta.py module, included here for
+# reference only. It is NOT original code from this project.
+# Source: https://github.com/SALib/SALib (MIT License)
+# SALib: Herman, J. and Usher, W. (2017) SALib: An open-source Python library
+# for Sensitivity Analysis. JOSS, 2(9), doi:10.21105/joss.00097
+# ============================================================================
+
 from __future__ import division
 from __future__ import print_function
 

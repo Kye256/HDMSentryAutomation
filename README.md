@@ -30,8 +30,7 @@ The extracted results were then analysed using ANOVA (to identify which inputs m
 ├── data/                       # Reference data (road list, abbreviations)
 ├── docs/
 │   ├── thesis.pdf              # Full MSc dissertation
-│   ├── presentation.ppt        # Oral defence presentation
-│   └── poster.pptx             # Research poster
+│   └── poster.pdf              # Research poster
 └── LICENSE
 ```
 
@@ -43,7 +42,7 @@ The extracted results were then analysed using ANOVA (to identify which inputs m
 | `results_extractor.py` | Connects to HDM-4's Access `.mdb` databases via `pyodbc`, extracts economic outputs |
 | `factorial_design.py` | Generates full factorial combinations of input levels |
 | `sobol_analysis.py` | Runs Sobol sensitivity analysis using SALib |
-| `delta_analysis.py` | Computes delta moment-independent sensitivity measures |
+| `delta_analysis.py` | SALib's delta module (included for reference, not original code) |
 
 ## Dependencies
 

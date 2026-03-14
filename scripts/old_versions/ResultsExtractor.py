@@ -1,7 +1,7 @@
 import csv, pyodbc
 
 # set up some constants
-MDB = 'C:\Users\Kyeyune.PKAZIBWE-LAP\Documents\HDMSentry\ww\WS\RunData\RunData.mdb'; DRV = '{Microsoft Access Driver (*.mdb)}'; PWD = 'pw'
+MDB = './hdmsentry_workspace/ww/WS/RunData/RunData.mdb'; DRV = '{Microsoft Access Driver (*.mdb)}'; PWD = ''
 
 # connect to db
 con = pyodbc.connect('DRIVER={};DBQ={};PWD={}'.format(DRV,MDB,PWD))
@@ -15,7 +15,7 @@ cur.close()
 con.close()
 
 # you could change the mode from 'w' to 'a' (append) for any subsequent queries
-with open('C:\Users\Kyeyune.PKAZIBWE-LAP\Documents\HDMSentry\ww\WS\RunData\\test.csv', 'w') as output:
+with open('./hdmsentry_workspace/ww/WS/RunData/test.csv', 'w') as output:
     csv_writer = csv.writer(output) # default field-delimiter is ","
     toprow = ['Alternative','NPV','IRR']
     csv_writer.writerow(toprow)

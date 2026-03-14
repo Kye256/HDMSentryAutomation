@@ -75,7 +75,7 @@ def analysis_run(name, traffic_growth, condition, traffic_volume, geometry):
     move_cursor(3)
     click_element(1)
 
-input_file = 'C:\Users\Kyeyune.PKAZIBWE-LAP\Documents\Msc. RoadMgtAndEng\Academics\IndividualProject\Analysis\Scripts\\input3rerun2.txt'
+input_file = './data/input3rerun2.txt'
 print " Using: %s as input file" % input_file  
 for line in fileinput.input(input_file):
     srt = line

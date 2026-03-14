@@ -9,13 +9,13 @@ has_top_row = False # Variable to check if the output file has been created and 
 def dbase_extract(run_num):
     global has_top_row  
     
-    opfile = 'C:\Users\Kyeyune.PKAZIBWE-LAP\Documents\Msc. RoadMgtAndEng\Academics\IndividualProject\Analysis\Scripts\\results7.csv'
-    
+    opfile = './data/results7.csv'
+
     # Set up the constants
-    DRIVER = '{Microsoft Access Driver (*.mdb)}'; PWD = 'pw'
+    DRIVER = '{Microsoft Access Driver (*.mdb)}'; PWD = ''
 
     # Go to the data outputfile for run_num
-    database = 'C:\Users\Kyeyune.PKAZIBWE-LAP\Documents\HDMSentry\%s\WS\RunData\RunData.mdb' %run_num;
+    database = './hdmsentry_workspace/%s/WS/RunData/RunData.mdb' %run_num;
     # connect to db
     con = pyodbc.connect('DRIVER={};DBQ={};PWD={}'.format(DRIVER,database,PWD))
     cur = con.cursor()
@@ -52,9 +52,9 @@ def dbase_extract(run_num):
 
 # Open a file to store data on the runs which failed (Did not result in a database being written)
 
-dmp = open('C:\Users\Kyeyune.PKAZIBWE-LAP\Documents\Msc. RoadMgtAndEng\Academics\IndividualProject\Analysis\Scripts\\failedruns7.txt', 'wb')
+dmp = open('./data/failedruns7.txt', 'wb')
 
-for line in fileinput.input('C:\Users\Kyeyune.PKAZIBWE-LAP\Documents\Msc. RoadMgtAndEng\Academics\IndividualProject\Analysis\Scripts\\input7.txt'):
+for line in fileinput.input('./data/input7.txt'):
     params = line.split(',')
     try:
         dbase_extract(params[0])

@@ -26,7 +26,7 @@ problem = {
 
 
 # Read the inputs and create a numpy matrix with them
-input_file = 'C:\Users\Kyeyune.PKAZIBWE-LAP\Documents\Msc. RoadMgtAndEng\Academics\IndividualProject\Analysis\SobolAnalysis\Trial2\\rawInput.txt'
+input_file = '../results/sobol/rawInput.txt'
 input_list_of_lists = []
 output_list_of_lists = []
 
@@ -41,7 +41,7 @@ in_values = numpy.array(input_list_of_lists)
 X  = in_values.T    # Try to transpose to deal with the error given by the dot product later on. Remove this comment once code is working
 
 # Read the outputs and create a numpy array with them
-output_file = 'C:\Users\Kyeyune.PKAZIBWE-LAP\Documents\Msc. RoadMgtAndEng\Academics\IndividualProject\Analysis\SobolAnalysis\Trial2\\npvoutput.txt'
+output_file = '../results/sobol/npvoutput.txt'
 
 
 for line in fileinput.input(output_file):

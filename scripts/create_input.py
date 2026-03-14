@@ -3,7 +3,7 @@ import itertools
 input_list = [[1,2,3,4],[0,1,2,3,4],[0,1,2],[0,1,2,3,4,5,6]] # Order is [ [Traffic_Growth, Condition, Traffic_volume, Geometry]]
 inputs = list(itertools.product(*input_list))
 
-fh = open('C:\Users\Kyeyune.PKAZIBWE-LAP\Documents\Msc. RoadMgtAndEng\Academics\IndividualProject\Analysis\Scripts\\input7.txt', 'w')
+fh = open('./data/input7.txt', 'w')
 run_number = 1
 
 for item in inputs:

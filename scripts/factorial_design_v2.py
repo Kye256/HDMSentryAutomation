@@ -8,7 +8,7 @@ import sys
 
 list_of_dicts = [None] # Initialize list with None to allow the run numbers to align with the list index
 
-input_file = 'C:\Users\Kyeyune.PKAZIBWE-LAP\Documents\Msc. RoadMgtAndEng\Academics\IndividualProject\Analysis\Scripts\\testinput.txt'
+input_file = './data/testinput.txt'
 
 for line in fileinput.input(input_file):
     input_list = line.split(',')
@@ -16,7 +16,7 @@ for line in fileinput.input(input_file):
     list_of_dicts.insert(run_number, {'Run':input_list[0], 'TG':input_list[1], 'CO':input_list[2], 'Tv':input_list[3], 'Ge':input_list[4].rstrip('\n')})  # Inserts the dictionary at the run_number index of the list
     #print list_of_dicts[run_number], run_number, '\n'
 
-output_file = 'C:\Users\Kyeyune.PKAZIBWE-LAP\Documents\Msc. RoadMgtAndEng\Academics\IndividualProject\Analysis\Scripts\\testresults2.csv'
+output_file = './data/testresults2.csv'
 
 for line in fileinput.input(output_file):
     output_list = line.split(',')

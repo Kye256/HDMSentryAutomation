@@ -6,13 +6,13 @@ import sys
 
 dict_of_dicts = {}
 
-input_file = 'C:\Users\Kyeyune.PKAZIBWE-LAP\Documents\Msc. RoadMgtAndEng\Academics\IndividualProject\Analysis\Scripts\\testinput.txt'
+input_file = './data/testinput.txt'
 
 for line in fileinput.input(input_file):
     input_list = line.split(',')
     dict_of_dicts[input_list[0]] = {'TG':input_list[1], 'CO':input_list[2], 'Tv':input_list[3], 'Ge':input_list[4].rstrip('\n')}
 
-output_file = 'C:\Users\Kyeyune.PKAZIBWE-LAP\Documents\Msc. RoadMgtAndEng\Academics\IndividualProject\Analysis\Scripts\\testresults2.csv'
+output_file = './data/testresults2.csv'
 
 for line in fileinput.input(output_file):
     #run_list = re.findall('T\S*Run\S*',line)

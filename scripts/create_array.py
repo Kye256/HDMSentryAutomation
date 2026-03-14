@@ -5,7 +5,7 @@ import fileinput
 
 list_of_lists = []
 
-input_file = 'C:\Users\Kyeyune.PKAZIBWE-LAP\Documents\Msc. RoadMgtAndEng\Academics\IndividualProject\Analysis\SobolAnalysis\Trial2\\npvoutput.txt'
+input_file = '../results/sobol/npvoutput.txt'
 for line in fileinput.input(input_file):
     inner_list = [elt.strip() for elt in line.split()]
         # in alternative, if you need to use the file content as numbers

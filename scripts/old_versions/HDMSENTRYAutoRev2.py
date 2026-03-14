@@ -72,7 +72,7 @@ def analysis_run(name, climate_zone, traffic_growth, traffic_volume, surface_cla
     move_cursor(3)
     click_element(1)
 
-for line in fileinput.input('C:\Users\Kyeyune.PKAZIBWE-LAP\Documents\Msc. RoadMgtAndEng\Academics\IndividualProject\Script\\input.txt'):
+for line in fileinput.input('../data/input.txt'):
     srt = line
     params = line.split(',')
     analysis_run(params[0],int(params[1]),int(params[2]),int(params[3]),int(params[4]),int(params[5]))
