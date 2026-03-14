@@ -75,6 +75,10 @@ If you found this useful, please cite:
 }
 ```
 
+## Acknowledgements
+
+This work was supervised by **Dr Michael Burrow** and **Dr Eric E. Stannard** at the University of Birmingham, School of Engineering.
+
 ## License
 
 This project is licensed under the MIT License — see [LICENSE](LICENSE) for details.
